@@ -1,0 +1,53 @@
+git config --global user.name "name"
+		   --global user.email "email"	
+		--global means for that user only
+		--user.name changes the user name 
+		--user.email changes the email address
+			--global user.name/user.email 
+		--gives the name(changed)/email of the user 
+	clear
+		--erases and clears the screen but not undo
+git help whatever needed eg commit	
+pwd
+cd ~ means home
+then hit pwd
+cd .. goes one step backwards
+ls lists all teh folders
+cd eg desktop  --goes to desktop folders
+cd eg tuna     --goes to tuna folder in desktop
+ls -- lists     -- lists contents of tuna folder
+git init means it will start a new repository  for the folder tuna i.e. tuna folder is now a project 
+ls -la : shows hidden files
+git add. --all the changes made to project. period or dot means all files
+git commit -m "write a msg for the commit"
+git log --allows to view commit history
+git log --author="divya" : it allows to see the commits of one person ;divya
+git status : 
+working copy > statging area > repository
+
+view diff in changes
+
+rename files
+-- git mv second.txt pudding.txt
+
+move file to a folder
+-- git mv pudding.txt loveNotes/patty.txt
+ i.e.git mv file  folder/rename(file name)
+ 
+ commit directly to repository
+ --git commit -am "msg"
+ 
+ take good files from repository to replace messed up file
+ --git checkout --index.html(the file taken from repository to replace)
+ 
+ unstage files (bring back from staging to working area)
+ --git reset HEAD profile.html(file to be removed from staging area)
+ 
+ getting old versions from repository
+    first>second>third >second (we do not want the third , so we want to revert to second)
+git log  first get all teh commmits
+ then
+ git checkout 017e7dba(version number in yellow) --index.html(file name)
+ 
+ git status
+  -- gets the good version and moves to working copy and then commit
