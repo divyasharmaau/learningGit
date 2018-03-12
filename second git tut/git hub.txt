@@ -1,3 +1,5 @@
 gitHub GUI is used
 
 make a .gitignore folder in the root of repo. it will have all the files that  need not to be used in the repo. ususally .exe  
+
+what if a change was made 
